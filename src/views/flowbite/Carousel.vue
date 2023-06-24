@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Carousel } from 'flowbite'
+import { TheCard } from 'flowbite-vue'
 
 onMounted(() => {
     const items = [

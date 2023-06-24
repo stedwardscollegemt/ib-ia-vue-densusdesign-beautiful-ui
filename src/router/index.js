@@ -1,18 +1,31 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Events from "../views/Events.vue";
-import Accordion from "../views/Accordion.vue";
-import Carousel from "../views/Carousel.vue";
-import Collapse from "../views/Collapse.vue";
-import Dial from "../views/Dial.vue";
-import Dismiss from "../views/Dismiss.vue";
-import Drawer from "../views/Drawer.vue";
-import Dropdown from "../views/Dropdown.vue";
-import Popover from "../views/Popover.vue";
-import Tabs from "../views/Tabs.vue";
-import Tooltip from "../views/Tooltip.vue";
-import Modal from "../views/Modal.vue";
+
+// common ui components by Flowbite
+import Events from "../views/flowbite/Events.vue";
+import Accordion from "../views/flowbite/Accordion.vue";
+import Carousel from "../views/flowbite/Carousel.vue";
+import Collapse from "../views/flowbite/Collapse.vue";
+import Dial from "../views/flowbite/Dial.vue";
+import Dismiss from "../views/flowbite/Dismiss.vue";
+import Drawer from "../views/flowbite/Drawer.vue";
+import Dropdown from "../views/flowbite/Dropdown.vue";
+import Popover from "../views/flowbite/Popover.vue";
+import Tabs from "../views/flowbite/Tabs.vue";
+import Tooltip from "../views/flowbite/Tooltip.vue";
+import Modal from "../views/flowbite/Modal.vue";
+
+// layout components
+import LandingLayout from "../views/layout/Landing.vue";
 
 const routes = [
+  {
+    path: "/",
+    name: "Public",
+    component: LandingLayout,
+        children:[
+
+        ]
+  },
   {
     path: "/events",
     name: "Events",
